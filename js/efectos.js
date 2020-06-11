@@ -27,29 +27,29 @@ $(document).ready(function(){
     galeria = $('#galeria').offset().top,
     ubicacion = $('#ubicacion').offset().top;
 
-    $('#btn-acerca-de').on('click', function(){
-        //e.preventDeafault();
+    $('#btn-acerca-de').on('click', function(e){
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: acercade - 100
         }, 500);
     });
 
     $('#btn-menu').on('click', function(e){
-        //e.preventDeafault();
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: platillos - 100
         }, 500);
     });
 
     $('#btn-galeria').on('click', function(e){
-        //e.preventDeafault();
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: galeria - 100
         }, 500);
     });
 
     $('#btn-ubicacion').on('click', function(e){
-        //e.preventDeafault();
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: ubicacion - 100
         }, 500);
